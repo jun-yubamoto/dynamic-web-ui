@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Overview
 
 insタグ内にscriptとして入力済みにしたいデータがjsonとして定義されている前提。
-dynamic-example.component.ts.ngOnInit()内でタグ内のjsonを取得して、データバインド対象のフィールドに代入することで実現。
+dynamic-example.component.ts.ngOnInit()内でタグ内のjsonを取得して、データバインド対象のフィールドに代入することで実現。
 
 ```html:index.html
 〜前略〜
