@@ -25,3 +25,24 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Overview
+
+insタグ内にscriptとして入力済みにしたいデータがjsonとして定義されている前提。
+dynamic-example.component.ts.ngOnInit()内でタグ内のjsonを取得して、データバインド対象のフィールドに代入することで実現。
+
+```html:index.html
+〜前略〜
+<body>
+  <!-- リクエストのデータを挿入するタグとしてinsを使用(目印になればなんでも良い) -->
+  <ins>
+  <script>
+  var json = {
+    "alias_name": "ccc",
+    "alias_age": 22
+  }
+  </script>
+  </ins>
+  <app-root></app-root>
+```
+
